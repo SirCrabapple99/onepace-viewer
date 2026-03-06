@@ -1,12 +1,15 @@
-body {
-  overflow: auto;
-  height: 200%;
-  margin: 0;
-  background-color: black;
+body, html {
+    overflow: auto;
+    touch-action: none;
+    overscroll-behavior: none;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    overscroll-behavior: none;
 }
 
 body::-webkit-scrollbar {
-  overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 #videoHolder {
@@ -27,46 +30,105 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
+#video::-webkit-media-controls {
+    display: none !important;
+}
+
 .videoControls {
     position: absolute;
-    background: orange;
+    background: rgb(61, 61, 157);
     opacity: var(--controlsOpacity);
     transition: opacity 0.35s;
 }
 
 #fastForward {
     right: 30%;
+    border-radius: 50%;
+    width: 8%;
 }
 
 #rewind {
+    border-radius: 50%;
     left: 30%;
-    transform: scaleX(-1);
+    width: 8%;
+}
+
+#playPause {
+    border-radius: 50%;
+    width: 8%;
 }
 
 #timeline {
     --videoPercent: 0%;
     width: 100%;
-    height: 1%;
+    height: 2%;
     vertical-align: auto;
     place-self: end center;
     /* calculate to make the timeline 100% opaque instad of 50% */
     opacity: calc(1 * calc(var(--controlsOpacity) * 2));
     background: linear-gradient(to right,
-    rgba(255, 165, 0, 1) var(--videoPercent),
-    rgba(255, 255, 255, 0) var(--videoPercent)
-    );
+            rgba(61, 61, 157, 1) var(--videoPercent),
+            rgba(255, 255, 255, 0) var(--videoPercent));
 }
 
 #timelineDrag {
     position: absolute;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 100%;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
     place-self: end;
     left: 0%;
     /* position the dragger so it lines up properly with the timeline */
-    transform: translate(-50%, 0.475vw);
+    transform: translate(-50%, 1vw);
     opacity: calc(1 * calc(var(--controlsOpacity) * 2));
     transition: opacity 0.35s;
-    background: orange;
+    background: rgb(61, 61, 157);
+}
+
+/* mobile */
+@media only screen and (min-width: 768px) {
+    #fastForward {
+    right: 30%;
+    border-radius: 50%;
+    width: 4.5%;
+}
+
+#rewind {
+    border-radius: 50%;
+    left: 30%;
+    width: 4.5%;
+}
+
+#playPause {
+    border-radius: 50%;
+    width: 4.5%;
+}
+
+    #timeline {
+        --videoPercent: 0%;
+        width: 100%;
+        height: 1%;
+        vertical-align: auto;
+        place-self: end center;
+        /* calculate to make the timeline 100% opaque instad of 50% */
+        opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+        background: linear-gradient(to right,
+                rgba(61, 61, 157, 1) var(--videoPercent),
+                rgba(255, 255, 255, 0) var(--videoPercent));
+    }
+
+    #timelineDrag {
+        position: absolute;
+        width: 1.5vw;
+        height: 1.5vw;
+        border-radius: 50%;
+        place-self: end;
+        left: 0%;
+        /* position the dragger so it lines up properly with the timeline */
+        transform: translate(-50%, 0.475vw);
+        opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+        transition: opacity 0.35s;
+        background: rgb(61, 61, 157);
+    }
+    
 }
