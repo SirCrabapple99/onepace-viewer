@@ -1,2 +1,2 @@
 # onepace-viewer
-Better website to watch One Pace
+Fetches episodes from one pace and plays them in one website

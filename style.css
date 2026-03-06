@@ -1,0 +1,72 @@
+body {
+  overflow: auto;
+  height: 200%;
+  margin: 0;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+  overflow-y: hidden;
+}
+
+#videoHolder {
+    --controlsOpacity: 0;
+    --playPause: 0;
+    display: grid;
+    place-items: center;
+    place-self: center;
+    height: fit-content;
+    position: relative;
+    width: 90%;
+    margin: 0;
+    user-select: none;
+}
+
+#video {
+    height: auto;
+    width: 100%;
+}
+
+.videoControls {
+    position: absolute;
+    background: orange;
+    opacity: var(--controlsOpacity);
+    transition: opacity 0.35s;
+}
+
+#fastForward {
+    right: 30%;
+}
+
+#rewind {
+    left: 30%;
+    transform: scaleX(-1);
+}
+
+#timeline {
+    --videoPercent: 0%;
+    width: 100%;
+    height: 1%;
+    vertical-align: auto;
+    place-self: end center;
+    /* calculate to make the timeline 100% opaque instad of 50% */
+    opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+    background: linear-gradient(to right,
+    rgba(255, 165, 0, 1) var(--videoPercent),
+    rgba(255, 255, 255, 0) var(--videoPercent)
+    );
+}
+
+#timelineDrag {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    place-self: end;
+    left: 0%;
+    /* position the dragger so it lines up properly with the timeline */
+    transform: translate(-50%, 0.475vw);
+    opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+    transition: opacity 0.35s;
+    background: orange;
+}
