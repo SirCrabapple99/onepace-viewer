@@ -11,15 +11,12 @@ async function fetchOnePace() {
     headers.forEach(h2 => {
         // grab arc names
         const arcName = h2.textContent.trim()
-        const link = link[i].textContent.trim()
         arcs.push({
             arc: arcName,
-
         })
     })
-    links.forEach(a => {})
 
-    return headers
+    alert(JSON.stringify(arcs))
 }
 
 fetchOnePace().then(arcs => {
