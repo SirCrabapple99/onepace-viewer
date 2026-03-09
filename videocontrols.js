@@ -43,7 +43,7 @@ function hideTimer() {
 }
 
 async function showControls() {
-    videoHolder.style.setProperty('--controlsOpacity', 0.75)
+    videoHolder.style.setProperty('--controlsOpacity', 1)
     clearTimeout(wait)
     hideTimer()
 }
@@ -129,12 +129,12 @@ video.addEventListener('playing', () => {
     if (wasPaused == true) {
         video.pause()
     } else {
-        playPauseElement.children[0].setAttributeNS(null, 'd', 'M12 10h8v28h-8zM28 10h8v28h-8z')
+        playPauseElement.setAttribute('src', '.Assets/pause-solid-full.svg')
     }
 })
 
 video.addEventListener('pause', () => {
-    playPauseElement.children[0].setAttributeNS(null, 'd', 'M16 10v28l22-14z')
+    playPauseElement.setAttribute('src', '.Assets/play-solid-full.svg')
     wasPaused = true
 })
 

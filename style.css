@@ -8,10 +8,6 @@ body, html {
     overscroll-behavior: none;
 }
 
-body {
-    
-}
-
 body::-webkit-scrollbar {
     overflow-y: hidden;
 }
@@ -40,6 +36,9 @@ body::-webkit-scrollbar {
     position: absolute;
     opacity: var(--controlsOpacity);
     transition: opacity 0.35s;
+    background: none;
+    filter: brightness(0);
+    filter: invert(1);
 }
 
 #fastForward {
@@ -64,11 +63,10 @@ body::-webkit-scrollbar {
     height: 2%;
     vertical-align: auto;
     place-self: end center;
-    /* calculate to make the timeline 100% opaque instad of 50% */
-    opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+    opacity: var(--controlsOpacity);
     background: linear-gradient(to right,
-            rgba(61, 61, 157, 1) var(--videoPercent),
-            rgba(255, 255, 255, 0) var(--videoPercent));
+            black var(--videoPercent),
+            white var(--videoPercent));
 }
 
 #timelineDrag {
@@ -80,9 +78,9 @@ body::-webkit-scrollbar {
     left: 0%;
     /* position the dragger so it lines up properly with the timeline */
     transform: translate(-50%, 1vw);
-    opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+    opacity: var(--controlsOpacity);
     transition: opacity 0.35s;
-    background: rgb(61, 61, 157);
+    background: black;
 }
 
 /* mobile */
@@ -106,30 +104,17 @@ body::-webkit-scrollbar {
 }
 
     #timeline {
-        --videoPercent: 0%;
         width: 100%;
         height: 1%;
-        vertical-align: auto;
-        place-self: end center;
-        /* calculate to make the timeline 100% opaque instad of 50% */
-        opacity: calc(1 * calc(var(--controlsOpacity) * 2));
-        background: linear-gradient(to right,
-                rgba(61, 61, 157, 1) var(--videoPercent),
-                rgba(255, 255, 255, 0) var(--videoPercent));
     }
 
     #timelineDrag {
         position: absolute;
         width: 1.5vw;
         height: 1.5vw;
-        border-radius: 50%;
-        place-self: end;
-        left: 0%;
         /* position the dragger so it lines up properly with the timeline */
         transform: translate(-50%, 0.475vw);
         opacity: calc(1 * calc(var(--controlsOpacity) * 2));
-        transition: opacity 0.35s;
-        background: rgb(61, 61, 157);
     }
     
 }

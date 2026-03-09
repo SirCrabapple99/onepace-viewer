@@ -9,16 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
     <div id="videoHolder">
-      <video id="video" playsinline -webkit-playsinline>  
+      <video id="video">
         <!--https://pixeldrain.net/api/file/eGQDZANW-->
         <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div id="timeline" class="videoControls"></div>
       <div id="timelineDrag" class="videoControls"></div> 
-      <svg id="rewind" class="videoControls" onclick="backward()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18V6l-8.5 6 8.5 6zm.5-6L20 18V6l-8.5 6z" fill="#000"/></svg>
-      <svg id="fastForward" class="videoControls" onclick="forward()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" fill="#000"/></svg>
-      <svg id="playPause" class="videoControls" onclick="playPause()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M16 10v28l22-14z" fill="#000"/></svg>
+      <img id="rewind" class="videoControls" onclick="backward()" src="./Assets/backward-solid-full.svg"></img>
+      <img id="fastForward" class="videoControls" onclick="forward()" src="./Assets/forward-solid-full.svg"></img>
+      <img id="playPause" class="videoControls" onclick="playPause()" src="./Assets/play-solid-full.svg"></img>
     <script src="videocontrols.js"></script>
     <script src="arcfetch.js"></script>
   </body>
