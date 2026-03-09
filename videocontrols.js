@@ -129,12 +129,12 @@ video.addEventListener('playing', () => {
     if (wasPaused == true) {
         video.pause()
     } else {
-        playPauseElement.setAttribute('src', '.Assets/pause-solid-full.svg')
+        playPauseElement.setAttribute('src', './Assets/pause-solid-full.svg')
     }
 })
 
 video.addEventListener('pause', () => {
-    playPauseElement.setAttribute('src', '.Assets/play-solid-full.svg')
+    playPauseElement.setAttribute('src', './Assets/play-solid-full.svg')
     wasPaused = true
 })
 
