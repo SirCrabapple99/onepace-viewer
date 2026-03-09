@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
     opacity: var(--controlsOpacity);
     background: linear-gradient(to right,
             black var(--videoPercent),
-            white var(--videoPercent));
+            rgba(255, 255, 255, 0) var(--videoPercent));
 }
 
 #timelineDrag {
