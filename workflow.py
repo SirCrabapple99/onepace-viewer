@@ -50,8 +50,6 @@ def arcLinks():
             linksDict['languages'].update({dubSub.get_text().replace('\n                                    ', ' '): dubSubLinksDict})
 
         arc.update({liID: linksDict})
-    with open ('links.json', 'w') as f:
-        f.write(json.dumps(arc, indent=4))
 
 arcLinks()
 
@@ -87,7 +85,7 @@ def pixelDrain():
         arcDict.update({
                 arcid: episodeDict
         })
-    with open ('linkspixeldrain.json', 'w') as f:
+    with open ('./linkspixeldrain.json', 'w') as f:
         f.write(json.dumps(arcDict, indent=4))
 
 pixelDrain()
