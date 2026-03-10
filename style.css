@@ -1,5 +1,4 @@
 body, html {
-    overflow: auto;
     touch-action: none;
     overscroll-behavior: none;
     height: 100%;
@@ -9,7 +8,15 @@ body, html {
 }
 
 body::-webkit-scrollbar {
-    overflow-y: hidden;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #videoHolder {
@@ -23,7 +30,7 @@ body::-webkit-scrollbar {
     user-select: none;
     margin: auto;
     
-    display: flex;
+    display: grid;
     align-items: center;
 }
 
@@ -81,6 +88,49 @@ body::-webkit-scrollbar {
     opacity: var(--controlsOpacity);
     transition: opacity 0.35s;
     background: black;
+}
+
+/* episodes */
+
+#arcDropDown {
+    width: 90%;
+    height: 10%;
+    background: white;
+    border: 1%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    margin-bottom: 1%;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#episodeHolder {
+    overflow: scroll;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background: white;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 288px);
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    align-content: start;
+}
+
+#episodeHolder::-webkit-scrollbar {
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+.episode {
+    width: 288px;
+    height: 162px;
+    background: blue;
 }
 
 /* mobile */
