@@ -78,7 +78,7 @@ def pixelDrain():
                 for episode in response.json()['files']:
                     episodeName = re.search(r'\[.*\] (.*) \[.*\]', episode['name']).group(1)
                     langDict.update({
-                        episodeName: f'https://pixeldrain.net/api/file/{episode['id']}'
+                        episodeName: f"https://pixeldrain.net/api/file/{episode['id']}"
                     })
 
                 if languageName not in episodeDict:
