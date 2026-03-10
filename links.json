@@ -1,0 +1,451 @@
+{
+    "romance-dawn": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/LC22RWvq",
+                "720p": "https://pixeldrain.net/l/At73d5SH",
+                "1080p": "https://pixeldrain.net/l/LVyeVAjL"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/WwJh9XFv",
+                "720p": "https://pixeldrain.net/l/Vr56CGx3",
+                "1080p": "https://pixeldrain.net/l/bypZ611Y"
+            },
+            "English Dub with Closed Captions": {
+                "480p": "https://pixeldrain.net/l/5Lms3CTc",
+                "720p": "https://pixeldrain.net/l/s4eubWzs",
+                "1080p": "https://pixeldrain.net/l/xe5AJy9v"
+            }
+        }
+    },
+    "orange-town": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/DB6yzXoa",
+                "720p": "https://pixeldrain.net/l/WEJNxGhq",
+                "1080p": "https://pixeldrain.net/l/MAwZejPC"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/B75aW6Dp",
+                "720p": "https://pixeldrain.net/l/SuFNLgMG",
+                "1080p": "https://pixeldrain.net/l/bViNuyND"
+            }
+        }
+    },
+    "syrup-village": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/WN5T2jSr",
+                "720p": "https://pixeldrain.net/l/wZSPLqpA",
+                "1080p": "https://pixeldrain.net/l/bZughUL3"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/cTTGxJ8y",
+                "720p": "https://pixeldrain.net/l/NQZtV6Ua",
+                "1080p": "https://pixeldrain.net/l/rwKsdYhv"
+            }
+        }
+    },
+    "gaimon": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/phZ3h3bW",
+                "720p": "https://pixeldrain.net/l/GSCf3j5A",
+                "1080p": "https://pixeldrain.net/l/34RuaDWW"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/q4MpivpS",
+                "720p": "https://pixeldrain.net/l/kv58hdoL",
+                "1080p": "https://pixeldrain.net/l/UqmPsUCF"
+            }
+        }
+    },
+    "baratie": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/hPQyyjTf",
+                "720p": "https://pixeldrain.net/l/JR7mF2uG",
+                "1080p": "https://pixeldrain.net/l/DvABXt6w"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/JtivUgEz",
+                "720p": "https://pixeldrain.net/l/GThCjCRA",
+                "1080p": "https://pixeldrain.net/l/tJVhNxyK"
+            }
+        }
+    },
+    "arlong-park": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/gXjJTaYK",
+                "720p": "https://pixeldrain.net/l/UyNWVSbD",
+                "1080p": "https://pixeldrain.net/l/7zXoKGrW"
+            },
+            "English Subtitles, Extended Cut ": {
+                "480p": "https://pixeldrain.net/l/Ehjm3yVJ",
+                "720p": "https://pixeldrain.net/l/D5iMepBR",
+                "1080p": "https://pixeldrain.net/l/chJ28fH8"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/dT1xz6yM",
+                "720p": "https://pixeldrain.net/l/eMJepy12",
+                "1080p": "https://pixeldrain.net/l/6DatxPiL"
+            },
+            "English Dub, Extended Cut ": {
+                "480p": "https://pixeldrain.net/l/bMuM2Lsg",
+                "720p": "https://pixeldrain.net/l/RFXsGvJk",
+                "1080p": "https://pixeldrain.net/l/DWg4P7E9"
+            }
+        }
+    },
+    "the-adventures-of-buggys-crew": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/FqWWwsFD",
+                "720p": "https://pixeldrain.net/l/E1QXSY7a",
+                "1080p": "https://pixeldrain.net/l/gghbHuzT"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/t32fqpbi",
+                "720p": "https://pixeldrain.net/l/z5hJ3bZ9",
+                "1080p": "https://pixeldrain.net/l/6oukgUQp"
+            }
+        }
+    },
+    "loguetown": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/sng6aHYQ"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/6PXc5Fwt"
+            }
+        }
+    },
+    "reverse-mountain": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/gehq5RGo"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/np7wZkqg"
+            }
+        }
+    },
+    "whisky-peak": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/5d4WRz1y"
+            }
+        }
+    },
+    "the-trials-of-koby-meppo": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/81KWfWcq"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/HfHjHtvU"
+            }
+        }
+    },
+    "little-garden": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/uGAb7TWj",
+                "720p": "https://pixeldrain.net/l/89ocLnCv",
+                "1080p": "https://pixeldrain.net/l/NBMcTurd"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/xKrPcGiu",
+                "720p": "https://pixeldrain.net/l/54b9Rjmc",
+                "1080p": "https://pixeldrain.net/l/dokMzV7s"
+            }
+        }
+    },
+    "drum-island": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/4juJksu7"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/uHcgEuGE"
+            }
+        }
+    },
+    "alabasta": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/t8zvG6gH",
+                "720p": "https://pixeldrain.net/l/m6uYD3ir",
+                "1080p": "https://pixeldrain.net/l/KX3E2PR4"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/aJGnLV2J",
+                "720p": "https://pixeldrain.net/l/CfQda5dH",
+                "1080p": "https://pixeldrain.net/l/eyh7yEiv"
+            }
+        }
+    },
+    "jaya": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/P6mnmZpN"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/KkaKPKG5"
+            }
+        }
+    },
+    "skypiea": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/1bDwFCf9",
+                "720p": "https://pixeldrain.net/l/q4HPAiL4",
+                "1080p": "https://pixeldrain.net/l/arhxWEdj"
+            },
+            "English Subtitles, Alternate Cut (G-8)": {
+                "480p": "https://pixeldrain.net/l/rmFNCgGt",
+                "720p": "https://pixeldrain.net/l/9u9rcZLR",
+                "1080p": "https://pixeldrain.net/l/3mJLhyXC"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/fs2XfKd9",
+                "720p": "https://pixeldrain.net/l/vT96zd5x",
+                "1080p": "https://pixeldrain.net/l/TVGUu2hh"
+            },
+            "English Dub, Alternate Cut (G-8)": {
+                "480p": "https://pixeldrain.net/l/5U3B9n45",
+                "720p": "https://pixeldrain.net/l/kiCsu2W3",
+                "1080p": "https://pixeldrain.net/l/27rF4SrD"
+            }
+        }
+    },
+    "long-ring-long-land": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/7ky9W8GE",
+                "720p": "https://pixeldrain.net/l/opsghUMA",
+                "1080p": "https://pixeldrain.net/l/naP4DUTn"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/Z2sz2unY",
+                "720p": "https://pixeldrain.net/l/K6N3P2mm",
+                "1080p": "https://pixeldrain.net/l/KDhJiGow"
+            }
+        }
+    },
+    "water-seven": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/o8YkGt9i"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/YASfiy9a"
+            }
+        }
+    },
+    "enies-lobby": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/PxxTYRGz",
+                "720p": "https://pixeldrain.net/l/543jMNry",
+                "1080p": "https://pixeldrain.net/l/Lbggw3VT"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/2uVcwgNv",
+                "720p": "https://pixeldrain.net/l/KrCar7De",
+                "1080p": "https://pixeldrain.net/l/AaZZzDQ6"
+            }
+        }
+    },
+    "post-enies-lobby": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/upyN5vVk"
+            }
+        }
+    },
+    "thriller-bark": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/Cq9faLGv"
+            }
+        }
+    },
+    "sabaody-archipelago": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/jhpKUqF8"
+            }
+        }
+    },
+    "amazon-lily": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/Bsr9gKsn"
+            }
+        }
+    },
+    "impel-down": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/y5ywnHdF"
+            }
+        }
+    },
+    "if-you-could-go-anywhere-the-adventures-of-the-straw-hats": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/QWXq5X3x",
+                "720p": "https://pixeldrain.net/l/cnjWovN9"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/uAYgee4x",
+                "720p": "https://pixeldrain.net/l/Ua5GkcGr"
+            }
+        }
+    },
+    "marineford": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/uFuFpnpi"
+            }
+        }
+    },
+    "post-war": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/7EANMSA7"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/tEnZhUuP"
+            }
+        }
+    },
+    "return-to-sabaody": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/igysH62b"
+            },
+            "English Dub": {
+                "720p": "https://pixeldrain.net/l/ED8gfT3e"
+            }
+        }
+    },
+    "fishman-island": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/o6ZzNwzp"
+            }
+        }
+    },
+    "punk-hazard": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/wJoipMZu"
+            }
+        }
+    },
+    "dressrosa": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/DMuj2Pqe"
+            }
+        }
+    },
+    "zou": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/nSkEY2Cq"
+            }
+        }
+    },
+    "whole-cake-island": {
+        "languages": {
+            "English Subtitles": {
+                "720p": "https://pixeldrain.net/l/phsTwRmF"
+            }
+        }
+    },
+    "reverie": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/Md2atmnr",
+                "720p": "https://pixeldrain.net/l/FnBXXzXi",
+                "1080p": "https://pixeldrain.net/l/RLz2BXe7"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/H3DQb3P1",
+                "720p": "https://pixeldrain.net/l/GGe3i7SZ",
+                "1080p": "https://pixeldrain.net/l/Cp4KrdKb"
+            }
+        }
+    },
+    "wano": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/6rSQPvNJ",
+                "720p": "https://pixeldrain.net/l/Fje5h8U7",
+                "1080p": "https://pixeldrain.net/l/iRATbpNF"
+            },
+            "English Subtitles, Extended Cut ": {
+                "480p": "https://pixeldrain.net/l/9TDTz6HH",
+                "720p": "https://pixeldrain.net/l/AEp1K6Dn",
+                "1080p": "https://pixeldrain.net/l/pFSu2BLb"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/AeSxHKgD",
+                "720p": "https://pixeldrain.net/l/CZ3gsu93",
+                "1080p": "https://pixeldrain.net/l/NADiYYhV"
+            },
+            "English Dub, Extended Cut ": {
+                "480p": "https://pixeldrain.net/l/tYCeSuZg",
+                "720p": "https://pixeldrain.net/l/BTMHfuBD",
+                "1080p": "https://pixeldrain.net/l/Bpo6EuXK"
+            }
+        }
+    },
+    "egghead": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/PRTmztoz",
+                "720p": "https://pixeldrain.net/l/uA4CjnkS",
+                "1080p": "https://pixeldrain.net/l/ddzH3mPn"
+            },
+            "English Subtitles, Extended Cut ": {
+                "480p": "https://pixeldrain.net/l/t76xv9jq",
+                "720p": "https://pixeldrain.net/l/fPyGshT4",
+                "1080p": "https://pixeldrain.net/l/87XoYXT9"
+            },
+            "English Dub": {
+                "480p": "https://pixeldrain.net/l/dWhY9wKi",
+                "720p": "https://pixeldrain.net/l/r3hbpmy7",
+                "1080p": "https://pixeldrain.net/l/nKaeVsMp"
+            },
+            "English Dub, Extended Cut ": {
+                "480p": "https://pixeldrain.net/l/FGfHFhsy",
+                "720p": "https://pixeldrain.net/l/5AE6HNCR",
+                "1080p": "https://pixeldrain.net/l/BiCB3xar"
+            }
+        }
+    },
+    "one-piece-fan-letter": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/JGkNAa1V",
+                "720p": "https://pixeldrain.net/l/cTvXTid9",
+                "1080p": "https://pixeldrain.net/l/FA11f6u2"
+            }
+        }
+    },
+    "warship-island-01-april-fools-2025": {
+        "languages": {
+            "English Subtitles": {
+                "480p": "https://pixeldrain.net/l/YTERtTLz",
+                "720p": "https://pixeldrain.net/l/y3pdBczx",
+                "1080p": "https://pixeldrain.net/l/Fo4iTm7F"
+            }
+        }
+    }
+}
