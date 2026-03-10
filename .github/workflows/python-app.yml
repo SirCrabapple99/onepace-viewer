@@ -3,11 +3,9 @@
 
 name: fetch api
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+  workflow_dispatch:
+  schedule:
+    - cron: '00 12 1 * *'
 permissions:
   contents: write
 
@@ -37,9 +35,15 @@ jobs:
       run: python workflow.py
     - name: Commit and Push changes
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "actions@gitub.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add .
         git commit -m "Automated update of links" || echo "No changes to commit"
-        git push
+        git push origin HEAD:main
+        git status
+    - name: I give up
+      run: |
+        echo "files:"
+        ls -la
+        echo "satus:"
         git status
