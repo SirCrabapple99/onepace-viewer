@@ -143,3 +143,23 @@ let controlsLocked = true
 window.onload = () => {
     showControls()
 }
+
+// fullscreen stuff
+function fullScreenToggle() {
+    if (document.fullscreenElement) {
+        document.exitFullscreen()
+    } else {
+        videoHolder.requestFullscreen()
+    }
+}
+
+let expandCompress = document.getElementById('expandCompress')
+function fullScreenCheck() {
+    if (document.fullscreenElement) {
+        expandCompress.setAttribute('src', './Assets/compress-solid-full.svg')
+    } else {
+        expandCompress.setAttribute('src', './Assets/expand-solid-full.svg')
+    }
+}
+
+window.addEventListener('fullscreenchange', fullScreenCheck)

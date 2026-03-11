@@ -1,61 +1,98 @@
-body, html {
-    touch-action: none;
-    overscroll-behavior: none;
-    height: 100%;
-    margin: 0;
-    background-color: black;
-    overscroll-behavior: none;
+/* my css is so bad so i used https://css.github.io/csso/csso.html to optimize it a little */
+
+/* apple font face weights and stuff from here: https://gist.github.com/OutThisLife/363ba7d9dd83b8af17dcafe68b5ac905 */
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff')
 }
 
-body::-webkit-scrollbar {
+.SF,.SFBold {
+    font-family: "San Francisco"
+}
+
+.SFBold {
+    font-weight: 700
+}
+
+#fullGradient,body,html {
+    height: 100%;
+    background-repeat: no-repeat
+}
+
+body,html {
+    touch-action: none;
+    margin: 0;
+    background-size: 200%;
+    overscroll-behavior: none
+}
+
+#fullGradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#72a0c1,#1f305e);
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none
+}
+
+#episodeHolder::-webkit-scrollbar,body::-webkit-scrollbar {
     overflow: hidden;
-    scrollbar-width: none;
+    scrollbar-width: none
 }
 
 .lexend {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Lexend",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal
 }
 
 #videoHolder {
     --controlsOpacity: 0;
     --playPause: 0;
-    height: fit-content;
     isolation: isolate;
     position: relative;
     width: 90%;
-    margin: 0;
     user-select: none;
     margin: auto;
-    
     display: grid;
-    align-items: center;
+    align-items: center
 }
 
 #video {
-    height: auto;
+    margin-top: .5vh;
+    max-height: 99vh;
     width: 100%;
 }
 
 .videoControls {
     position: absolute;
     opacity: var(--controlsOpacity);
-    transition: opacity 0.35s;
-    background: none;
+    transition: all .35s;
+    border-radius: 100px;
+}
+
+.videoControls:hover {
+    transform: scale(110%)
+}
+
+.imageWhite {
     filter: brightness(0);
-    filter: invert(1);
+    filter: invert(1)
 }
 
 #fastForward {
     width: 12%;
-    right: 15%;
+    right: 15%
 }
 
 #rewind {
     width: 12%;
-    left: 15%;
+    left: 15%
 }
 
 #playPause {
@@ -63,108 +100,134 @@ body::-webkit-scrollbar {
     left: 44%
 }
 
+#expandCompress {
+    bottom: 6vh;
+    width: 10%;
+    right: 6.5vh;
+}
+
+#timeline,#timelineDrag {
+    position: absolute;
+    opacity: var(--controlsOpacity)
+}
+
 #timeline {
-    border-radius: 0%;
+    border-radius: 0;
     --videoPercent: 0%;
     width: 100%;
     height: 2%;
     vertical-align: auto;
     place-self: end center;
-    opacity: var(--controlsOpacity);
-    background: linear-gradient(to right,
-            black var(--videoPercent),
-            rgba(255, 255, 255, 0) var(--videoPercent));
+    transition: all .35s;
+    background: linear-gradient(to right,white var(--videoPercent),rgba(255,255,255,0) var(--videoPercent))
 }
 
 #timelineDrag {
-    position: absolute;
     width: 3vw;
     height: 3vw;
     border-radius: 50%;
     place-self: end;
-    left: 0%;
-    /* position the dragger so it lines up properly with the timeline */
-    transform: translate(-50%, 1vw);
-    opacity: var(--controlsOpacity);
-    transition: opacity 0.35s;
-    background: black;
+    left: 0;
+    transform: translate(-50%,1vw);
+    transition: opacity .35s;
+    background: #fff
 }
-
-/* episodes */
 
 #arcDropDown {
     width: 90%;
     height: 10%;
-    background: white;
-    border: 1%;
     margin: auto;
-    margin-top: 1%;
+    margin-top: 3.5vh;
     display: flex;
-    margin-bottom: 1%;
-    color: black;
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 100px;
+    color: #fff;
     text-align: center;
     font-size: 1.5em;
+    outline: 0;
+    appearance: none;
+    transition: all .35s ease
+}
+
+#arcDropDown:hover {
+    transform: scale(102%)
+}
+
+.arcOptions {
+    background-color: #72a0c1
+}
+
+.arcOptions:hover {
+    transform: scale(100%)
 }
 
 #episodeHolder {
     overflow: scroll;
-    height: 90%;
+    height: 75%;
     width: 90%;
     margin: auto;
-    background: white;
-    margin-bottom: 3%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 288px);
-    gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: 20px;
+    padding: 20px;
     justify-content: space-evenly;
-    align-content: start;
-}
-
-#episodeHolder::-webkit-scrollbar {
-    overflow: hidden;
-    scrollbar-width: none;
+    align-content: start
 }
 
 .episode {
-    width: 288px;
-    height: 162px;
-    background: blue;
+    width: 200px;
+    height: 112.5px;
+    border-radius: 30px;
+    display: grid;
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,.1);
+    place-items: center;
+    transition: all .35s ease
 }
 
-/* mobile */
-@media only screen and (min-width: 768px) {
-#fastForward {
-    width: 3%;
-    top: 90%;
-    left: 15%;
+.episode:hover {
+    transform: scale(105%)
 }
 
-#rewind {
-    width: 3%;
-    top: 90%;
-    left: 3%;
+.episodeNumber {
+    color: #fff;
+    font-size: 5em
 }
 
-#playPause {
-    width: 3%;
-    top: 90%;
-    left: 9%;
-}
+@media only screen and (min-width:768px) {
+    #playPause,#rewind, #fastForward {
+        width: 3%;
+        top: 90%;
+        left: 3%
+    }
+
+    #fastForward {
+        left: 15%
+    }
+
+    #playPause {
+        left: 9%
+    }
+
+    #expandCompress {
+        width: 3.5%;
+        top: 90%;
+        right: 3%;
+    }
 
     #timeline {
         width: 100%;
-        height: 1%;
+        height: 1%
     }
 
     #timelineDrag {
         position: absolute;
         width: 1.5vw;
         height: 1.5vw;
-        /* position the dragger so it lines up properly with the timeline */
-        transform: translate(-50%, 0.475vw);
-        opacity: calc(1 * calc(var(--controlsOpacity) * 2));
+        transform: translate(-50%,.475vw);
+        opacity: calc(1*calc(var(--controlsOpacity)*2))
     }
-    
 }

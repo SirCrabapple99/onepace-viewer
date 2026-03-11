@@ -3,45 +3,34 @@
   <head>
     <title>One Pace Viewer</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
   </head>
   <body>
+    <div id="fullGradient"></div>
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
+
     <div id="videoHolder">
       <video id="video" playsinline>
-        <!--https://pixeldrain.net/api/file/eGQDZANW-->
-        <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
+        <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" t" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div id="timeline" class="videoControls"></div>
+
+      <div id="timeline"></div>
       <div id="timelineDrag" class="videoControls"></div> 
-      <img id="rewind" class="videoControls" onclick="backward()" src="./Assets/backward-solid-full.svg"></img>
-      <img id="fastForward" class="videoControls" onclick="forward()" src="./Assets/forward-solid-full.svg"></img>
-      <img id="playPause" class="videoControls" onclick="playPause()" src="./Assets/play-solid-full.svg"></img>
+      <img id="rewind" class="imageWhite videoControls" onclick="backward()" src="./Assets/backward-solid-full.svg"></img>
+      <img id="fastForward" class="imageWhite videoControls" onclick="forward()" src="./Assets/forward-solid-full.svg"></img>
+      <img id="playPause" class="imageWhite videoControls" onclick="playPause()" src="./Assets/play-solid-full.svg"></img>
+      <img id="expandCompress" class="imageWhite videoControls" onclick="fullScreenToggle()" src="./Assets/expand-solid-full.svg"></img>
     </div>
-    <strong><select id="arcDropDown" class="lexend">
+
+    <select id="arcDropDown" class="SF">
+      <option value="" disabled hidden selected>(No Arc Selected)</option>
     </select>
-    <div id="episodeHolder">
-      <div id="testEpisode" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-      <div id="testEpisode2" class="episode"></div>
-    </div>
+
+    <div id="episodeHolder"></div>
+
     <script src="videocontrols.js"></script>
     <script src="arcfetch.js"></script>
   </body>
